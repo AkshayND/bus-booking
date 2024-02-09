@@ -1,0 +1,80 @@
+.seat {
+  width: 120px;
+  height: 60px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+
+.seat:not(.booked):not(.selected):hover{
+  border-color: black;
+  background-color: rgb(230, 230, 230);
+}
+
+.seat:not(.booked):not(.selected):hover .seatEnd{
+  border-color: black;
+}
+
+.seatEnd {
+  /* width: 1px; */
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  top:10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.booked .seatEnd {
+  border-color: black;
+}
+
+.selected .seatEnd {
+  border-color: black;
+}
+
+.seat.booked {
+  background-color: darkgrey;
+  border-color: black;
+  cursor: default;
+}
+
+.seat.selected {
+  background-color: lightcoral;
+  border-color: black;
+}
+
+
+.seat.vertical {
+  width: 60px;
+  height: 120px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.vertical .seatEnd {
+  /* width: 1px; */
+    position: absolute;
+    right: 10px;
+    top: 40px;
+
+}
+
+.seat.booked {
+  background-color: darkgrey;
+  cursor: default;
+}
+
+.seat.selected {
+  background-color: lightcoral;
+}

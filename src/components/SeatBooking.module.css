@@ -1,0 +1,27 @@
+
+.deck {
+  display: flex;
+  height: 300px;
+  background-color: #fff;
+  border-left: 10px solid #686868;
+  padding: 20px;
+}
+
+.carHandle {
+  border-right: 3px solid #939393;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+
+.seatContainer{ 
+  display: flex;
+  flex-direction: column;
+}
+
+.sideSeats{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
